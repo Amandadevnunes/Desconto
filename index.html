@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Uma loja de deartamento oferece descontos diferentes dependendo do tipo de cliente. 
+Os clientes podem se "padrão" "premium" ou "vip". O desconto para cada tipo de cliente é de 10%, 20% e 30%,
+respectivamente. Escreva um programa que receba o tipo de cliente e o valor ttal da compra como entrada e
+calcule o valor final da compra com o desconto aplicado. -->
+
+    <script>
+
+
+        let cliente = prompt("Digite a classificação do cliente:");
+        let valor = prompt("Digite o valor da compra");
+        let valorf;
+
+        switch (cliente) {
+
+            case "Padrão":
+                valorf = "Desconto é de 10%" + " " + (valor - (0.10 * valor))
+                break;
+
+
+            case "Premium":
+                valorf = "Desconto é de 20%" + " " + (valor - (0.20 * valor))
+                break;
+
+            case "Vip":
+                valorf = "Desconto é de 30%" + " " + (valor - (0.30 * valor))
+
+                break;
+
+            default:
+                cliente = false;
+                break;
+
+        }
+
+        if (cliente == false) {
+            alert("Cliente ou valor iválido");
+        }
+
+        else {
+            alert(valorf);
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
